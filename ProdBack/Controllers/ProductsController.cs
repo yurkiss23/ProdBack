@@ -4,20 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-//using ProdBack.ViewModels;
+using ProdBack.ViewModels;
 
 namespace ProdBack.Controllers
 {
-    public class ProductVM
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Image { get; set; }
-        public string Price { get; set; }
-        public string[] Description { get; set; }
-        public string BtnContent { get; set; }
-    }
-
     [Produces("application/json")]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
